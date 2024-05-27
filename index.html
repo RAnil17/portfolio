@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fd9a44d915.js" crossorigin="anonymous"></script>
+    <style>
+        /* CSS styles can be added here or in the styles.css file */
+    </style>
+    <script>
+        // JavaScript functions can be added here or in a separate JavaScript file
+        function openmenu() {
+            document.getElementById("sidemenu").style.width = "250px";
+        }
+        
+        function closemenu() {
+            document.getElementById("sidemenu").style.width = "0";
+        }
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" class="logo" alt="Logo"> <!-- Added alt attribute for accessibility -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars hamburger-menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Develpoer</p>
+                <h1>Hi, I'm <span>Anil</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+    
+<!-- About Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.avif" alt="User Image"> <!-- Added alt attribute for accessibility -->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hello, I'm Anil Ramavath, hailing from Hyderabad, India, and I'm passionate about Computer Science. I boast proficiency in languages such as C, Java, and SQL, alongside expertise in web technologies like HTML, CSS, and JavaScript. With a robust academic foundation and hands-on project experience in web development and healthcare management systems, complemented by certifications in Red Hat and Oracle, I'm eager to leverage my skills to contribute effectively to your projects.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Certifications')">Certifications</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>C,java,python</span><br>Computer languages</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>fullstack Developer</span><br>Building web/apps</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Certifications">
+                    <ul>
+                        <li><span>Red Hat Certified Enterprise Application Develope</span><br>Red Hat</li>
+                        <li><span>Oracle Certified Associate</span><br>Oracle</li>
+                        <li><span>Wipro Talentnext</span><br>Wipro</li>
+                        <li><span>Automation Anywhere Certified Essentials RPA Professional 2023</span><br>RPA</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2024</span><br>B.Tech from KL University</li>
+                        <li><span>2020</span><br>Intermediate from Nano Junior College</li>
+                        <li><span>2018</span><br>Schooling from Sri Chaitanya School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="section-title">My Services</h1> <!-- Changed class from "sub-title" to "section-title" for consistency -->
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i> <!-- Assuming you have font awesome solid icons -->
+                <h2>Web Design</h2>
+                <p>Description about web design</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i> <!-- Assuming you have font awesome solid icons -->
+                <h2>UI/UX Design</h2> <!-- Corrected spelling of "desigbn" to "Design" -->
+                <p>Description about UI/UX design</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i> <!-- Assuming you have font awesome brands icons -->
+                <h2>App Design</h2>
+                <p>Description about app design</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------portfolio-------------------->
+<div id="portfolio">
+    <div class="container">
+        <div class="section-title">My Work</div> <!-- Changed class from "sub-title" to "section-title" for consistency -->
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.jpg" alt="Work 1 Image"> <!-- Added alt attribute for accessibility -->
+                <div class="layer">
+                    <h3>Social Media App</h3> <!-- Corrected spelling of "Socail" to "Social" -->
+                    <p>The app connects you to talented people around the world</p> <!-- Improved the description for clarity -->
+                    <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Assuming you have font awesome solid icons -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg" alt="Work 2 Image"> <!-- Added alt attribute for accessibility -->
+                <div class="layer">
+                    <h3>Music App</h3> <!-- Corrected capitalization of "Music app" -->
+                    <p>The app lets you explore music from various artists</p> <!-- Improved the description for clarity -->
+                    <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Assuming you have font awesome solid icons -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.jpg" alt="Work 3 Image"> <!-- Added alt attribute for accessibility -->
+                <div class="layer">
+                    <h3>Portfolio Website</h3> <!-- Updated the title to reflect the nature of the work -->
+                    <p>This is a portfolio website showcasing my projects</p> <!-- Improved the description for clarity -->
+                    <a href="#"><i class="fa-solid fa-link"></i></a> <!-- Assuming you have font awesome solid icons -->
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a> <!-- Moved the "See more" button inside the container -->
+    </div>
+</div>
+<!--------------contact-------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="section-title">Contact Me</h1> <!-- Changed class from "sub-title" to "section-title" for consistency -->
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p> <!-- Assuming you have font awesome solid icons -->
+                <p><i class="fa-solid fa-phone"></i>0123456789</p> <!-- Assuming you have font awesome solid icons -->
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <a href="images/Anil _RESUME.pdf" download class="btn btn2">Download CV</a> <!-- Assuming you have a button class "btn" and "btn2" -->
+            </div> 
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> <!-- Assuming you have a button class "btn" and "btn2" -->
+                </form>
+                <span id="msg">Message sent successfully</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright <i class="fas fa-heart"></i> by me </p> <!-- Assuming you have font awesome solid icons -->
+</div>
+
+
+
+
+<script>
+    // Tab switching functionality
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].classList.remove("active-link");
+        }
+
+        for (var i = 0; i < tabContents.length; i++) {
+            tabContents[i].classList.remove("active-tab");
+        }
+
+        document.getElementById(tabname).classList.add("active-tab");
+
+        for (var i = 0; i < tabLinks.length; i++) {
+            if (tabLinks[i].textContent === tabname) {
+                tabLinks[i].classList.add("active-link");
+                break;
+            }
+        }
+    }
+
+    // Side menu functionality
+    var sidemenu = document.getElementById("sidemenu"); // Corrected typo in id
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+    // Form submission functionality
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvtKypLZkwGSJw-DEMLxF2zabGbDsb8LCMDdM0BQV5YLQB0P_uWmXgPQMdsMqQ1T3C/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                if (response.ok) {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                } else {
+                    throw new Error('Network response was not ok.');
+                }
+            })
+            .catch(error => {
+                console.error('Error!', error.message);
+            });
+    });
+</script>
+
+
+
+</body>    
+</html>
